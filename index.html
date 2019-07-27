@@ -11,6 +11,15 @@
     and Electron <span id="electron-version"></span>.
 
     <!-- You can also require other files to run in this process -->
+    <p>
+      <button class="alert">Current Directory</button>
+    </p>
+    <script>
+      const button = document.querySelector('.alert');
+      button.addEventListener('click', ()=>{
+        alert(__dirname);
+      });
+    </script>
     <script src="./renderer.js"></script>
   </body>
 </html>
